@@ -1,0 +1,6 @@
+<meta http-equiv="refresh" content="{$time};url={$url}"/>
+{if $watetime ==0}
+<div style="color: green">{$msg},{$time}秒后<a href='index.php'>跳转！</a></div>
+{else}
+<div style="color: red">密码错误！,{$time}秒后<a href='tepls/templates/dologin.html'>跳转！</a></div>
+{/if}

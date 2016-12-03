@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="tepls/templates/common/style/style.css"/>
+<link rel="stylesheet" type="text/css" href="tepls/templates/common/style/loginreg.css"/>
+<link rel="stylesheet" type="text/css" href="tepls/templates/font/font.css">
+</head>
+
+<body>
+<div class="reg_top">
+    <div class="section rel">
+    	<div class="clears"></div> 
+    	<div class="reg_logo">
+        	<a href="index.html">&nbsp;</a>
+        </div>
+        <h1>登录</h1>
+    </div>
+</div>
+<!--主体内容-->
+<div class="section reg_body">
+	<form action="?ap=login&md=doLogin" id="myform" method="post">
+    	<table border="0" class="pd10_bg f16" style="margin-left:210px; line-height:36px;" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="120" align="right">用户名：</td>
+                <td>
+                	<div class="form_e">
+                		<input type="text" class="inputs w260"  id="username" name="username" />
+                	</div>
+                </td>
+              </tr>
+              <tr>
+                <td width="120" align="right">密   码：</td>
+                <td>
+                	<div class="form_e">
+                		<input type="password" class="inputs w260"  id="password" name="password" />
+                	</div>
+                </td>
+              </tr>
+               <tr>
+                <td width="120" align="right">验证码：</td>
+                <td>
+                	<div class="form_e">
+                        <input type="text" class="inputs w120 fl" id="yzm" name="yzm" />
+                        <img class="fl" src="tepls/templates/temp/yzm.jpg" width="140" height="38"  alt=""/>
+                	</div>
+                </td>
+              </tr>
+               <tr>
+                <td width="120" align="right"> </td>
+                <td>
+                	<input type="submit" value="登 录" class="btn w140 login_btn" />
+                   
+                </td>
+              </tr>
+        </table> 
+    </form>
+</div>
+<!--主体内容 end-->
+
+<script type="text/javascript" src="tepls/templates/common/scripts/jquery-1.11.2.min.js"></script> 
+<script type="text/javascript" src="tepls/templates/common/scripts/jquery.validate.min.js"></script>
+<script type="text/javascript" src="tepls/templates/common/scripts/v_cn.js"></script>
+<script type="text/javascript" src="tepls/templates/common/scripts/yanzheng.js"></script>
+</body>
+</html>
